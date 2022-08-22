@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #341877, #3caed1);
+    color: #fff;
+    font-family: Ubuntu, sans-serif;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 27pt;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 550px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.clock {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    border-radius: 150px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+}
+
+
+.numb {
+    font-size: 22pt;
+}
+
+.text {
+    margin-top: 5px;
+}
+
+
+
+
+@media only screen and (max-width: 650px) {
+    
+    .main {
+        width: 90vw;
+    }
+
+    .clock {
+        width: 250vw;
+        height: 13.5vh;
+    }
+
+    .numb {
+        font-size: 22pt;
+    }
+
+    .text {
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .clock {
+        width: 20vw;
+        height: 15vh;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main > div {
+        padding: 20px;
+    }
+
+    .clock {
+        width: 13vw;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main > div {
+        padding: 20px;
+    }
+
+    .clock {
+        width: 20vw;
+        height: auto;
+    }
+
+}
+
